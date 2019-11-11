@@ -1,0 +1,28 @@
+<ion-grid>
+	<ion-row justify-content-center>
+		<ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+			<div padding>
+				<ion-item>
+					<img src="./assets/img/uk.svg" class="flag"><ion-label>English</ion-label>
+					<ion-select value="notifications" interface="action-sheet">
+						<ion-select-option value="enable">English</ion-select-option>
+						<ion-select-option value="mute">Chinese</ion-select-option>
+						<ion-select-option value="mute_week">France</ion-select-option>
+					</ion-select>
+				</ion-item>
+
+				<ion-item>
+					<ion-input type="text" placeholder="Username"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-input type="password" placeholder="Password"></ion-input>
+				</ion-item>
+			</div>
+
+			<div padding>
+				<ion-button size="large" routerLink="/app" expand="block" fill="outline">Login</ion-button>
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-grid>

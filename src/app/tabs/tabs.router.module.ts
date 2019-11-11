@@ -46,7 +46,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/app/tabs/home',
     pathMatch: 'full'
   }
 ];
