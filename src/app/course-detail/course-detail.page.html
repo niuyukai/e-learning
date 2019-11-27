@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" tab="course">
+      <ion-back-button text="" icon="return-left"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Adults-A1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-segment [(ngModel)]="courses">
+        <ion-segment-button checked value="document">
+          <ion-label>Document</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="moive">
+          <ion-label>Moive</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="test">
+          <ion-label>Test</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <div [ngSwitch]="courses">
+
+        <ion-list *ngSwitchCase="'document'">
+          <ion-item>
+            <ion-icon name="document" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>unit1</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-01 16:21:14</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="document" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>unit2</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-02 20:11:03</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="document" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>unit3</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-03 09:13:00</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+    
+        <ion-list *ngSwitchCase="'moive'">
+          <ion-item>
+            <ion-icon name="film" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Beauty and the Beast</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-01 16:21:14</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="film" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Snow White</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-02 20:11:03</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="film" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Aladdin Lamp</h5>
+                </ion-col>
+                <ion-col>
+                    <h5>2019-09-03 09:13:00</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+        <ion-list *ngSwitchCase="'test'">
+          <ion-item>
+            <ion-icon name="clipboard" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Test1</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-icon name="checkmark-circle-outline" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="clipboard" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Test2</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-icon name="create" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="clipboard" slot="start"></ion-icon>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <h5>Test3</h5>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-icon name="create" slot="end"></ion-icon>
+          </ion-item>
+        </ion-list>
+      </div>
+</ion-content>
