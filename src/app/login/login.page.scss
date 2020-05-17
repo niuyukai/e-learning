@@ -1,10 +1,8 @@
-$white-color: #fff;
 $height100: 100%;
 
 ion-grid {
-    width:100%;
+    width:90%;
     height: $height100;
-    background: #dfdfdf;
 }
 
 ion-row {
@@ -13,7 +11,7 @@ ion-row {
 
 ion-col {
     border: 1px solid #488aff;
-    background: $white-color;
+    background :white;
 }
 
 ion-button {
@@ -22,7 +20,7 @@ ion-button {
 
 @media (min-width: 240px) and (max-width: 768px) {
     ion-grid {
-        background: $white-color;
+        background: transparent;
     }
     ion-col {
         border: none;
@@ -32,4 +30,18 @@ ion-button {
 .flag {
    width: 60px; 
    height: 30px;
+}
+
+ion-content {
+    --background: none;
+    background-image: url('../../assets/img/login.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.label {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
 }
